@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <AnchorPane layoutX="63.0" layoutY="-20.0" prefHeight="535.0" prefWidth="605.0">
+         <children>
+            <CheckBox fx:id="java" layoutX="-16.0" layoutY="66.0" mnemonicParsing="false" onAction="#java1" text="JAVA">
+               <font>
+                  <Font name="Californian FB" size="24.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="cpp" layoutX="118.0" layoutY="66.0" mnemonicParsing="false" onAction="#cpp1" text="C++">
+               <font>
+                  <Font name="Californian FB" size="24.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="c" layoutX="250.0" layoutY="66.0" mnemonicParsing="false" onAction="#C" text="C">
+               <font>
+                  <Font name="Californian FB" size="24.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chash" layoutX="394.0" layoutY="66.0" mnemonicParsing="false" onAction="#cSharp" text="C#">
+               <font>
+                  <Font name="Californian FB" size="24.0" />
+               </font>
+            </CheckBox>
+            <RadioButton fx:id="show" layoutX="-24.0" layoutY="149.0" mnemonicParsing="false" onAction="#select1" text="Show Selected Option">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dontShow" layoutX="234.0" layoutY="147.0" mnemonicParsing="false" onAction="#select2" text="Dont Show Selected Option">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </RadioButton>
+            <TextArea fx:id="area" layoutX="30.0" layoutY="286.0" prefHeight="156.0" prefWidth="413.0" rotate="179.4" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
