@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <AnchorPane layoutX="88.0" layoutY="-34.0" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <CheckBox fx:id="java" layoutX="102.0" layoutY="83.0" mnemonicParsing="false" onAction="#java1" text="JAVA">
+               <font>
+                  <Font name="Californian FB" size="40.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="cpp" layoutX="650.0" layoutY="94.0" mnemonicParsing="false" onAction="#cpp1" text="C++">
+               <font>
+                  <Font name="Californian FB" size="40.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="c" layoutX="1122.0" layoutY="87.0" mnemonicParsing="false" onAction="#C" text="C">
+               <font>
+                  <Font name="Californian FB" size="40.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chash" layoutX="1570.0" layoutY="86.0" mnemonicParsing="false" onAction="#cSharp" text="C#">
+               <font>
+                  <Font name="Californian FB" size="40.0" />
+               </font>
+            </CheckBox>
+            <RadioButton fx:id="show" layoutX="114.0" layoutY="344.0" mnemonicParsing="false" onAction="#select1" text="Show Selected Option">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="47.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dontShow" layoutX="987.0" layoutY="341.0" mnemonicParsing="false" onAction="#select2" text="Dont Show Selected Option">
+               <font>
+                  <Font name="Bodoni MT Bold" size="53.0" />
+               </font>
+            </RadioButton>
+            <TextArea fx:id="area" layoutX="265.0" layoutY="717.0" prefHeight="292.0" prefWidth="1343.0" text="Sample">
+               <font>
+                  <Font name="Californian FB" size="46.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.73" topOpacity="0.0">
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </Reflection>
+               </effect></TextArea>
+            <ColorPicker fx:id="pick" layoutX="983.0" layoutY="580.0" onAction="#colorer" promptText="SELECT FOR BG Color" />
+            <ColorPicker fx:id="texter" layoutX="523.0" layoutY="569.0" onAction="#selectTextColor" />
+            <ChoiceBox fx:id="box1" layoutX="94.0" layoutY="569.0" prefWidth="150.0" />
+            <Label fx:id="myLabel1" layoutX="59.0" layoutY="672.0" text="Label" />
+            <Slider fx:id="slider" blockIncrement="0.5" layoutX="-9.0" layoutY="307.0" majorTickUnit="0.5" max="1.0" minorTickCount="10" orientation="VERTICAL" prefHeight="458.0" prefWidth="50.0" showTickLabels="true" showTickMarks="true" value="1.0">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <effect>
+                  <Reflection bottomOpacity="0.02" fraction="0.61" topOffset="5.0" topOpacity="0.18" />
+               </effect></Slider>
+            <ProgressBar fx:id="pgbar1" cacheShape="false" focusTraversable="false" layoutX="1608.0" layoutY="589.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.93" prefWidth="200.0" progress="0.03">
+               <effect>
+                  <Glow level="0.94" />
+               </effect>
+            </ProgressBar>
+            <Label fx:id="progressTracker" layoutX="1487.0" layoutY="583.0" prefHeight="35.0" prefWidth="121.0" text="00.00%" textFill="#0e8aab">
+               <font>
+                  <Font name="Bodoni MT Black" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
