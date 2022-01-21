@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllerClass">
+   <children>
+      <ListView fx:id="list" layoutX="14.0" layoutY="15.0" prefHeight="381.0" prefWidth="280.0" />
+      <Button fx:id="buttonForList" layoutX="183.0" layoutY="420.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="222.0" text="Sample Text" textFill="#9e1616">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Line endX="24.0" endY="27.0" layoutX="376.0" layoutY="393.0" startX="0.7928466796875" startY="10.04290771484375" />
+      <Line endX="101.2928466796875" endY="0.54290771484375" layoutX="275.0" layoutY="402.0" startX="-66.0" startY="0.54290771484375" />
+      <Line endX="86.5" endY="-19.95709228515625" layoutX="121.0" layoutY="423.0" startX="63.0" />
+      <TreeView fx:id="myTree" layoutX="300.0" layoutY="15.0" onContextMenuRequested="#fontSelector" onMouseClicked="#fontSelector" prefHeight="381.0" prefWidth="280.0" />
+   </children>
+</AnchorPane>
